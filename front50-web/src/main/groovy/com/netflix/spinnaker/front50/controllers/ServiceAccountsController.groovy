@@ -41,7 +41,7 @@ import retrofit.RetrofitError
 public class ServiceAccountsController {
 
   @Autowired
-  Optional<ServiceAccountDAO> serviceAccountDAO;
+  Optional<ServiceAccountDAO> serviceAccountDAO
 
   @Autowired(required = false)
   FiatService fiatService

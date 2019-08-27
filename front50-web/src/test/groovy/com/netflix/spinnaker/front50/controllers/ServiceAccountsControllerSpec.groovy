@@ -25,7 +25,7 @@ import spock.lang.Specification
 import spock.lang.Subject
 
 class ServiceAccountsControllerSpec extends Specification {
-  def serviceAccountDAO = Mock(ServiceAccountDAO)
+  Optional<ServiceAccountDAO> serviceAccountDAO = Optional.of(Mock(ServiceAccountDAO))
   def fiatService = Mock(FiatService)
   def fiatClientConfigurationProperties = Mock(FiatClientConfigurationProperties)
   def fiatPermissionsEvaluator = Mock(FiatPermissionEvaluator)
